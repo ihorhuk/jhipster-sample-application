@@ -1,0 +1,33 @@
+/**
+ * The Employee entity.
+ */
+entity User {
+	/**
+	* The firstname attribute.
+	*/
+	firstName String,
+	lastName String,
+	email String,
+	username String,
+    password String
+}
+
+entity Country {
+	countryCode String required,
+	countryName String
+}
+
+entity Currency {
+	currencyCode String required,
+	currencyName String
+}
+
+
+
+
+
+// Set pagination options
+paginate User, Country with infinite-scroll
+paginate Currency with pagination
+
+
