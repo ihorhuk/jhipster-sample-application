@@ -1,0 +1,20 @@
+
+entity Country {
+	countryCode String required,
+	countryName String
+}
+
+entity Currency {
+	currencyCode String required,
+	currencyName String
+}
+
+
+
+
+
+// Set pagination options
+paginate Country with infinite-scroll
+paginate Currency with pagination
+
+
